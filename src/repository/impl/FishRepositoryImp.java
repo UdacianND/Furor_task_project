@@ -31,4 +31,16 @@ public class FishRepositoryImp implements FishRepository {
         }
         return false;
     }
+
+    @Override
+    public Fish getByIndex(int index) {
+        if(index < 0 || index >= fishList.size())
+            throw new IllegalArgumentException();
+        return fishList.get(index);
+    }
+
+    @Override
+    public int getFishCount() {
+        return fishList.size();
+    }
 }

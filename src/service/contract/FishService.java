@@ -5,4 +5,5 @@ import models.Fish;
 public interface FishService {
     boolean addNewFish(Fish fish );
     boolean deleteById(long id);
+    Fish getRandomFish();
 }

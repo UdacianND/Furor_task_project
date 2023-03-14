@@ -14,7 +14,7 @@ public class ThreadManager {
     private static final ThreadGroup threadGroup = new ThreadGroup("ThreadGroup");
     private static final Random randomGenerator = new Random();
     private static final FishRepository fishRepository = new FishRepositoryImp();
-    private static final FishService fishService = new FishServiceImp(fishRepository);
+    private static final FishService fishService = new FishServiceImp(fishRepository, randomGenerator);
     private static final FishFactory fishFactory = new FishFactory(randomGenerator);
     public static void initData(){
         int males = randomGenerator.nextInt(10)+5;

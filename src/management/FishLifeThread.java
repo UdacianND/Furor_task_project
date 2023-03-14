@@ -1,6 +1,7 @@
 package management;
 
 import models.Fish;
+import models.Gender;
 import service.contract.FishService;
 
 import java.time.LocalDateTime;
@@ -23,12 +24,12 @@ public class FishLifeThread implements Runnable{
         LocalDateTime deathTime = fish.getBirthday().plusSeconds(fish.getLifeExpectancy());
         while (isAlive){
             try {
-                System.out.println(fish.getId() + " : eating");
+                //System.out.println(fish.getId() + " : eating");
                 Thread.sleep(3000);
-                System.out.println(fish.getId() + " : sleeping");
+                //System.out.println(fish.getId() + " : sleeping");
                 Thread.sleep(3000);
-                boolean hasMetMate =  randomGenerator.nextBoolean();
-                if(hasMetMate){
+                Fish friend = fishService.getRandomFish();
+                if(friend.getGender() == Gender.FEMALE){
                     ThreadManager.addBabyFish();
                 }
                 isAlive = deathTime.isAfter(LocalDateTime.now());
