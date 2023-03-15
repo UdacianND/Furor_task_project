@@ -29,7 +29,7 @@ public class FishLifeThread implements Runnable{
                 //System.out.println(fish.getId() + " : sleeping");
                 Thread.sleep(3000);
                 Fish friend = fishService.getRandomFish();
-                if(friend.getGender() == Gender.FEMALE){
+                if(friend.getGender() != fish.getGender()){
                     ThreadManager.addBabyFish();
                 }
                 isAlive = deathTime.isAfter(LocalDateTime.now());

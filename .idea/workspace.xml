@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c61bf83-201a-428a-915f-4d9c153b8f38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/management/FishLifeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/management/FishLifeThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/management/ThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/management/ThreadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/contract/FishRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/contract/FishRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/impl/FishRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/impl/FishRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/contract/FishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/contract/FishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/FishServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/FishServiceImp.java" afterDir="false" />
-    </list>
+    <list default="true" id="4c61bf83-201a-428a-915f-4d9c153b8f38" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
