@@ -24,22 +24,21 @@ public class FishLifeThread implements Runnable{
         LocalDateTime deathTime = fish.getBirthday().plusSeconds(fish.getLifeExpectancy());
         while (isAlive){
             try {
-                //System.out.println(fish.getId() + " : eating");
                 Thread.sleep(3000);
-                //System.out.println(fish.getId() + " : sleeping");
-                Thread.sleep(3000);
-                Fish friend = fishService.getRandomFish();
-                if(friend.getGender() != fish.getGender()){
-                    ThreadManager.addBabyFish();
-                }
                 isAlive = deathTime.isAfter(LocalDateTime.now());
                 if(!isAlive) {
                     fishService.deleteById(fish.getId());
                     System.out.println("Oh poor! Fish died (!");
+                }else {
+                    Fish friend = fishService.getRandomFish();
+                    if(friend.getGender() != fish.getGender()){
+                        ThreadManager.addBabyFish();
+                    }
                 }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
     }
+
 }
